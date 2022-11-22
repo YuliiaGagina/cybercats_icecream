@@ -1,17 +1,19 @@
 @import './base/reset';
 @import './base/common';
+@import './utils/mixin';
 
 @import './components/container';
 
 @import './utils/hidden';
 @import './utils/variebles';
-@import './utils/mixin';
+
 
 @import './components/buttons';
 @import './components/title';
 
 
 @import './layouts/header';
+
 @import './layouts/hero';
 @import './layouts/products';
 @import './layouts/about';

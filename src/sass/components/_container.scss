@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
 
-  @include mq(mobile) {
+   @include mq(mobile) {
     max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
@@ -17,4 +17,6 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+
+ 
 }
