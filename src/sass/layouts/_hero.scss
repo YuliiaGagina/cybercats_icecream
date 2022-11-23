@@ -143,6 +143,10 @@
 }
 .hero-buttons:not(:last-child) {
   margin-right: 8px;
+
+  @include mq(desktop) {
+    margin-right: 34px;
+  }
 }
 .btn-hero-secondary {
   @include mq(desktop) {
@@ -252,26 +256,7 @@
     transform: rotate(360deg);
   }
 }
-// @-webkit-keyframes rotate-360-cw {
-//   0% {
-//     -webkit-transform: rotate(0);
-//     transform: rotate(0);
-//   }
-//   100% {
-//     -webkit-transform: rotate(360deg);
-//     transform: rotate(360deg);
-//   }
-// }
-// @keyframes rotate-360-cw {
-//   0% {
-//     -webkit-transform: rotate(0);
-//     transform: rotate(0);
-//   }
-//   100% {
-//     -webkit-transform: rotate(360deg);
-//     transform: rotate(360deg);
-//   }
-// }
+
 .hero-paragraph {
   max-width: 151px;
   font-size: 12px;
