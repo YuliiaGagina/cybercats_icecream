@@ -121,11 +121,7 @@ cursor: pointer;
 }
 
 
-  border-radius: 10px;
-  border: none;
-  transition: background-color var(--time) var(--cubic),
-    color var(--time) var(--cubic), fill var(--time) var(--cubic);
-}
+
 
 .btn-about:hover {
   background-color: var(--btn-hover-color);
@@ -192,14 +188,8 @@ cursor: pointer;
 }
 
 
-  background-color: transparent;
-  color: var(--hero-text-color);
 
-  border-radius: 10px;
-  border: 2px solid var(--btn-accent-bg);
-  transition: border var(--time) var(--cubic), color var(--time) var(--cubic),
-    fill var(--time) var(--cubic);
-}
+
 
 .btn-footer-secondary:hover {
   border: 2px solid var(--btn-hover-color);
