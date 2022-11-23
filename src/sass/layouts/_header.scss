@@ -1,6 +1,12 @@
 .header{
     // width: 100%;
     background-color: var( --mob-bg-color);
+    // @include mq(tablet){
+    //     padding-top: 24px;
+    // }
+    // @include mq(desktop){
+    //     padding-top: 24px;
+    // }
     
     &__wrapper{
         display: flex;
@@ -9,15 +15,41 @@
     }
     &__logo{
         padding: 12px 0;
+
         @include mq(tablet){
             padding: 20px 0;
+        
         }
+        @include mq(tablet){
+            margin-right: 303px;
+        }
+    }
+    &__navigation{
+        display: none;
+        @include mq(desktop){
+            display: flex;
+            align-items: center;
+
+        }
+
+    }
+    &__site-nav{
+        display: flex;
+        align-items: center;
     }
 }
 .svg-logo{
     width: 40px;
     height: 37px;
     fill: var(--accent-color);
+    @include mq(tablet){
+        width: 48px;
+        height: 44px;
+    }
+    @include mq(desktop){
+        width: 60px;
+        height: 65px;
+    }
 }
 .buttons-wrapper{
     margin-left: auto;
@@ -33,13 +65,29 @@
         
     }
 }
+.navigation{
+    &__link{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--header-color-white);
+
+    }
+    &__link.active{
+        color: var(--accent-color);
+
+    }
+    &__item + &__item{
+        margin-left: 28px;
+    }
+}
 
 .button__open{
     
     border: none;
     background-color: transparent;
-    @include mq( tablet){
-       
+    @include mq( desktop){
+       display: none;
     }
 }
 .svg-open{
