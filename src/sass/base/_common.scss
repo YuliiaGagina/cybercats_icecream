@@ -2,11 +2,14 @@
 
 // прописать стили для боди
 
+
 body{
     color: rgba(19, 19, 19, 1);
-
+    background-color: var(--tab-bg-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     letter-spacing: 0.04em;
     line-height: 1.76;
+    
+    
 }

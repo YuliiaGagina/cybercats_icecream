@@ -6,6 +6,8 @@
 
   @include mq(mobile) {
     max-width: 767px;
+
+
   }
   @include mq(tablet) {
     max-width: 1199px;
