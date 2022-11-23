@@ -1,22 +1,20 @@
 .container {
   width: 100%;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-   @include mq(mobile) {
-    max-width: 480px;
-    padding-left: 20px;
-    padding-right: 20px;
+  @include mq(mobile) {
+    max-width: 767px;
   }
   @include mq(tablet) {
-    max-width: 768px;
+    max-width: 1199px;
     padding-left: 32px;
     padding-right: 32px;
   }
-  @include mq(desctop) {
-    max-width: 1200px;
+  @include mq(desktop) {
+    min-width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
   }
-
- 
 }
