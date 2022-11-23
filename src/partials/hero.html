@@ -1,30 +1,68 @@
 <section class="section hero-section">
-  <div class="hero-wrap">
-    <h1 class="hero-title">ice cream made with passion</h1>
-    <ul class="hero-buttons-list">
-      <li class="hero-buttons"><button type="button">Products</button></li>
-      <li class="hero-buttons">
-        <button type="button">How it’s made?</button>
-      </li>
-    </ul>
-  </div>
-  <div class="hero-places">
-    <ul class="hero-places-list">
-      <li class="hero-places-item">
-        <p class="hero-places-numbers">16</p>
-        <p class="hero-places-name">cafes</p>
-      </li>
-      <li class="hero-places-item">
-        <p class="hero-places-numbers">23</p>
-        <p class="hero-places-name">food trucks</p>
-      </li>
-    </ul>
-  </div>
+  <div class="container hero-container">
+    <div class="hero-wrap">
+      <div class="hero-box">
+        <h1 class="hero-title">ice cream made with passion</h1>
+        <ul class="hero-buttons-list">
+          <li class="hero-buttons">
+            <button type="button" class="btn-hero">Products</button>
+          </li>
+          <li class="hero-buttons">
+            <button type="button" class="btn-hero-secondary">
+              How it’s made?
+            </button>
+          </li>
+        </ul>
+        <img
+          class="hero-img"
+          srcset="
+            ./images/icecream-m.png    170w,
+            ./images/icecream-m-2x.png 340w,
+            ./images/icecream-t.png    270w,
+            ./images/icecream-t-2x.png 540w,
+            ./images/icecream-d.png    484w,
+            ./images/icecream-d-2x.png 968w
+          "
+          src="./images/icecream-d.png "
+          sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (min-width: 480px) 170px"
+          width="484"
+          height="590"
+          alt="ice cream with colorful scoops"
+        />
+      </div>
+      <div class="hero-places">
+        <ul class="hero-places-list">
+          <li class="hero-places-item">
+            <p class="hero-places-numbers">16</p>
+            <p class="hero-places-name">cafes</p>
+          </li>
+          <li class="hero-places-item">
+            <p class="hero-places-numbers">23</p>
+            <p class="hero-places-name">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="hero-paragraph-box">
-    <p class="hero-paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-    </p>
+    <div class="hero-paragraph-box">
+      <img
+        class="hero-paragraph-img"
+        srcset="
+          ./images/hero-plate-tab.png     152w,
+          ./images/hero-plate-tab-x2.png  304w,
+          ./images/hero-plate-desk.png    225w,
+          ./images/hero-plate-desk-x2.png 450w
+        "
+        src="./images/hero-plate-desk.png"
+        sizes="(min-width: 1200px) 225px, (min-width: 768px) 354px"
+        width="225"
+        height="225"
+        alt="white plate with colorful ice cream scoops"
+      />
+      <p class="hero-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+    </div>
   </div>
 </section>
