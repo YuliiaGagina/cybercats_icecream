@@ -1,3 +1,212 @@
-h1{
-    color: red;
+.header{
+    // width: 100%;
+    background-color: var( --mob-bg-color);
+    
+    
+    &__wrapper{
+        display: flex;
+        // justify-content: space-between;
+        
+    }
+    &__logo{
+        padding: 12px 0;
+
+        @include mq(tablet){
+            padding: 20px 0;
+        
+        }
+        @include mq(tablet){
+            margin-right: 303px;
+        }
+    }
+    &__navigation{
+        display: none;
+        @include mq(desktop){
+            display: flex;
+            align-items: center;
+
+        }
+
+    }
+    &__site-nav{
+        display: flex;
+        align-items: center;
+    }
 }
+.svg-logo{
+    width: 40px;
+    height: 37px;
+    fill: var(--accent-color);
+    @include mq(tablet){
+        width: 48px;
+        height: 44px;
+    }
+    @include mq(desktop){
+        width: 60px;
+        height: 65px;
+    }
+}
+.buttons-wrapper{
+    margin-left: auto;
+    display: flex;
+    align-items:center;
+    gap: 32px;
+}
+.btn-tablet{
+    display: none;
+    @include mq(tablet){
+        height: 42px;
+        display: block;
+        
+    }
+}
+.navigation{
+    &__link{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--header-color-white);
+
+    }
+    &__link.active{
+        color: var(--accent-color);
+
+    }
+    &__item + &__item{
+        margin-left: 28px;
+    }
+}
+
+.button__open{
+    
+    border: none;
+    background-color: transparent;
+    @include mq( desktop){
+       display: none;
+    }
+}
+.svg-open{
+    width: 32px;
+    height: 32px;
+    fill: var(--header-color-white);
+}
+
+
+
+// ---------mob-menu
+
+
+
+
+.no-scroll {
+    overflow: hidden;
+}
+.menu-open {
+   
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    display: block;
+
+    @include mq(tablet){
+        display: none;
+    }
+   
+ 
+  
+}
+
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: var( --mob-bg-color);
+    top: 0;
+    left:0;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
+    overflow: hidden;
+    &__container{
+        height: 100%;
+        padding-bottom: 64px;
+        
+    }
+    
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        padding: 12px 0;
+    }
+    &__content{
+        height: 100%;
+        padding-top: 51px ;
+        padding-bottom: 64px ;
+        
+       
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+    }
+    
+    &__link{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.21;
+        color: var(--text-color-white);
+        
+    }
+    &__link.active{
+        color: var(--text-color-black);
+    }
+    &__navigation{
+        text-align: center;
+    }
+    &__button{
+        
+        max-width: 152px;
+        @include mq(tablet-only){
+            display: none;
+        }
+    }
+    .navigation__item + .navigation__item{
+         margin-top: 32px;
+    }
+  
+  
+}
+
+.menu-close {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  display: block;
+  padding: 16px 0;
+//   position: absolute;
+//   top: 10px;
+//   right: 15px;
+  cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // &__svg{
+    //     fill: currentColor;
+    // }
+    
+  
+}
+.menu-close:hover .menu-close__svg{
+    
+}
+
+
+.mob-menu.is-hidden{
+   transform: translateX(-100%);
+}
+
+
