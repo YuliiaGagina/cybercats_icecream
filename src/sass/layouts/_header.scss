@@ -1,12 +1,7 @@
 .header{
     // width: 100%;
     background-color: var( --mob-bg-color);
-    // @include mq(tablet){
-    //     padding-top: 24px;
-    // }
-    // @include mq(desktop){
-    //     padding-top: 24px;
-    // }
+    
     
     &__wrapper{
         display: flex;
@@ -130,6 +125,8 @@
     top: 0;
     left:0;
     height: 100%;
+    transform: translateX(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
     overflow: hidden;
     &__container{
@@ -209,7 +206,7 @@
 
 
 .mob-menu.is-hidden{
-   display: none;
+   transform: translateX(-100%);
 }
 
 
