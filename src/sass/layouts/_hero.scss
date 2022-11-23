@@ -55,6 +55,10 @@
   border-radius: 30%;
   z-index: 0;
 
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+
   @include mq(tablet) {
     width: 257px;
     height: 325px;
@@ -66,6 +70,27 @@
     width: 447px;
     height: 561px;
     filter: blur(50px);
+  }
+}
+@keyframes changeBgColor {
+  0% {
+    background: rgba(252, 252, 252, 0.44);
+    opacity: 0.5;
+  }
+
+  33% {
+    background: rgba(255, 134, 178, 0.44);
+    opacity: 1;
+  }
+
+  66% {
+    background: rgba(92, 255, 164, 0.44);
+    opacity: 1;
+  }
+
+  100% {
+    background: rgba(251, 255, 32, 0.44);
+    opacity: 0.5;
   }
 }
 .hero-img {
@@ -208,10 +233,45 @@
 .hero-paragraph-img {
   max-width: 152px;
 
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
   @include mq(desktop) {
     max-width: 225px;
   }
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+// @-webkit-keyframes rotate-360-cw {
+//   0% {
+//     -webkit-transform: rotate(0);
+//     transform: rotate(0);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
+// @keyframes rotate-360-cw {
+//   0% {
+//     -webkit-transform: rotate(0);
+//     transform: rotate(0);
+//   }
+//   100% {
+//     -webkit-transform: rotate(360deg);
+//     transform: rotate(360deg);
+//   }
+// }
 .hero-paragraph {
   max-width: 151px;
   font-size: 12px;
