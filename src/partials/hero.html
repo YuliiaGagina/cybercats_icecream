@@ -13,22 +13,25 @@
             </button>
           </li>
         </ul>
-        <img
-          class="hero-img"
-          srcset="
-            ./images/icecream-m.png    170w,
-            ./images/icecream-m-2x.png 340w,
-            ./images/icecream-t.png    270w,
-            ./images/icecream-t-2x.png 540w,
-            ./images/icecream-d.png    484w,
-            ./images/icecream-d-2x.png 968w
-          "
-          src="./images/icecream-d.png "
-          sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (min-width: 480px) 170px"
-          width="484"
-          height="590"
-          alt="ice cream with colorful scoops"
-        />
+        <div class="hero-img-box">
+          <img
+            class="hero-img"
+            srcset="
+              ./images/icecream-m.png    157w,
+              ./images/icecream-m-2x.png 314w,
+              ./images/icecream-t.png    257w,
+              ./images/icecream-t-2x.png 514w,
+              ./images/icecream-d.png    447w,
+              ./images/icecream-d-2x.png 894w
+            "
+            src="./images/icecream-d.png "
+            sizes="(min-width: 1200px) 447px, (min-width: 768px) 257px, (min-width: 480px) 157px"
+            width="484"
+            height="590"
+            alt="ice cream with colorful scoops"
+          />
+          <div class="hero-img-bg"></div>
+        </div>
       </div>
       <div class="hero-places">
         <ul class="hero-places-list">
@@ -59,10 +62,15 @@
         height="225"
         alt="white plate with colorful ice cream scoops"
       />
-      <p class="hero-paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
+      <div class="hero-paragraph-wrap">
+        <p class="hero-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="hero-paragraph-icon" width="40" height="16">
+          <use href="./images/icons.svg#arrow"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
