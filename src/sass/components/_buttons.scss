@@ -8,6 +8,7 @@
 //     </svg>
 //   </button>
 
+
 .btn-header {
   display: flex;
   gap: 4px;
@@ -20,10 +21,13 @@
   background-color: var(--btn-accent-bg);
   color: var(--hero-text-color);
 
-  border-radius: 10px;
+  // border-radius: 10px;
   border: none;
   transition: background-color var(--time) var(--cubic),
     color var(--time) var(--cubic), fill var(--time) var(--cubic);
+
+
+    
 }
 .btn-header:focus {
   background-color: var(--btn-hover-color);
