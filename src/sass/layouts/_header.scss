@@ -132,6 +132,13 @@
 
   overflow: hidden;
   &__container {
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background-color: var( --mob-bg-color);
+    top: 0;
+    left:0;
     height: 100%;
     padding-bottom: 64px;
   }
