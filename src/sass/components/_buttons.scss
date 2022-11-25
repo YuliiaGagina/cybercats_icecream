@@ -24,7 +24,6 @@
   border: none;
   transition: background-color var(--time) var(--cubic),
     color var(--time) var(--cubic), fill var(--time) var(--cubic);
-
   cursor: pointer;
 }
 .btn-header:focus {
@@ -39,6 +38,7 @@
 // кнопки для героя
 
 .btn-hero {
+  display: inline-block;
   padding: 11px 26px;
   font-size: 12px;
   font-weight: 600;
@@ -47,6 +47,8 @@
   border: 2px solid var(--btn-accent-bg);
   border-radius: 8px;
   background-color: transparent;
+
+  transition: border var(--time) var(--cubic);
 
   transition: border var(--time) var(--cubic);
   cursor: pointer;
@@ -66,9 +68,16 @@
 
   text-decoration-line: underline;
 
+  text-decoration-line: underline;
+
   color: var(--btn-accent-bg);
   transition: border var(--time) var(--cubic);
   cursor: pointer;
+
+  color: var(--btn-accent-bg);
+  background-color: transparent;
+  border: transparent;
+  transition: border var(--time) var(--cubic);
 }
 .btn-hero-secondary:hover {
   color: var(--btn-hover-color);
@@ -83,6 +92,11 @@
   display: flex;
   gap: 4px;
   align-items: center;
+
+  line-height: 1.2;
+  padding: 12px 34px;
+  background-color: var(--btn-accent-bg);
+  color: var(--hero-text-color);
 
   line-height: 1.2;
   padding: 12px 34px;
@@ -138,6 +152,10 @@
   display: flex;
   gap: 4px;
   align-items: center;
+
+  padding: 12px 40px;
+  font-weight: 600;
+  line-height: 1.2;
 
   padding: 12px 40px;
   font-weight: 600;
