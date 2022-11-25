@@ -1,5 +1,13 @@
 .hero-section {
   background-color: var(--mob-bg-color);
+  padding-top: 60px;
+  @include mq(tablet) {
+    padding-top: 26px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 37px;
+  }
 }
 .hero-container {
   position: relative;
@@ -40,7 +48,7 @@
 }
 .hero-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero-img-bg {
@@ -118,7 +126,6 @@
 .hero-title {
   width: 247px;
   margin-bottom: 32px;
-  padding-top: 110px;
 
   font-family: 'Seymour One', sans-serif;
   font-size: 26px;
@@ -129,11 +136,13 @@
   color: var(--header-color-white);
 
   @include mq(tablet) {
+    padding-top: 14px;
     width: 181px;
     font-size: 18px;
   }
 
   @include mq(desktop) {
+    padding-top: 8px;
     width: 367px;
     font-size: 38px;
   }
@@ -186,7 +195,7 @@
 .hero-places {
   margin-left: auto;
 }
-.hero-places-item {
+.hero-places-item:not(:last-child) {
   margin-bottom: 20px;
 
   @include mq(desktop) {
