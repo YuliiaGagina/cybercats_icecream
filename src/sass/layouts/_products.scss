@@ -2,19 +2,19 @@
   width: 100%;
   padding-bottom: 60px;
   padding-top: 60px;
-  background-image: url(./images/iceсream-fond-mob-1x.jpg);
+  background-image: url(../images/iceсream-fond-mob-1x.jpg);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
-    background-image: url(./images/iceсream-fond-mob-2x.jpg);
+    background-image: url(../images/iceсream-fond-mob-2x.jpg);
     }
   @include mq (tablet){
-    background-image: url(./images/icecream-fond-tab-1x.jpg);
+    background-image: url(../images/icecream-fond-tab-1x.jpg);
   
         @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx){
-      background-image: url(./images/icecream-fond-tab-2x.jpg);
+      background-image: url(../images/icecream-fond-tab-2x.jpg);
         }     
     }
   @media screen and (min-width: 1200px) {
