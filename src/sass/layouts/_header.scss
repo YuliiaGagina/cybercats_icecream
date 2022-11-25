@@ -5,32 +5,42 @@
     
     &__wrapper{
         display: flex;
-        // justify-content: space-between;
+        align-items: flex-end;
+        @include mq(tablet){
+            // align-items:center;
+        }
+        @include mq(desktop){
+           position: fixed;
+           z-index: 10000;
+        }
         
     }
     &__logo{
-        padding: 12px 0;
+        padding: 12px 0 0 0;
 
         @include mq(tablet){
-            padding: 20px 0;
+            padding: 20px 0 0 0;
         
         }
         @include mq(tablet){
             margin-right: 303px;
+        }
+        @include mq (desktop){
+            padding: 8px 0 0 0;
         }
     }
     &__navigation{
         display: none;
         @include mq(desktop){
             display: flex;
-            align-items: center;
+            align-items: flex-end;
 
         }
 
     }
     &__site-nav{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
 }
 .svg-logo{
@@ -51,6 +61,14 @@
     display: flex;
     align-items:center;
     gap: 32px;
+    @include mq(desktop){
+        margin-left: auto;
+    }
+    
+    
+}
+.btn-header.btn-tablet{
+     margin-left: auto;
 }
 .btn-tablet{
     display: none;
@@ -59,6 +77,7 @@
         display: block;
         
     }
+    
 }
 .navigation{
     &__link{
@@ -66,6 +85,9 @@
         font-size: 16px;
         line-height: 1.25;
         color: var(--header-color-white);
+        @include mq (desktop){
+            padding-top: 44px;
+        }
 
     }
     &__link.active{
@@ -86,6 +108,7 @@
     }
 }
 .svg-open{
+    display: flex;
     width: 32px;
     height: 32px;
     fill: var(--header-color-white);
