@@ -1,0 +1,53 @@
+.reviews {
+  padding-top: 75px;
+  padding-bottom: 48px;
+
+  @include mq(tablet) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 123px;
+    padding-bottom: 100px;
+  }
+}
+
+.reviews-img {
+  width: 85px;
+  min-height: 85px;
+  border-radius: 50%;
+}
+.reviews-text {
+  margin: 34px 39px;
+  background-color: var(--mob-bg-color);
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--text-color-white);
+
+  @include mq(tablet) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+.reviews-place {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.85;
+
+  text-align: center;
+
+  color: var(--text-color-black);
+
+  @include mq(tablet) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
