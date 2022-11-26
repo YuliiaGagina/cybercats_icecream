@@ -9,8 +9,8 @@
       // align-items:center;
     }
     @include mq(desktop) {
-      position: fixed;
-      z-index: 10000;
+      // position: fixed;
+      // z-index: 10000;
     }
   }
   &__logo {
