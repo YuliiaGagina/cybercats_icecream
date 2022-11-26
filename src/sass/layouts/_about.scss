@@ -230,26 +230,17 @@
   }
 }
 
-// .is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
 /*DATA-MODAL*/
 
 .backdrop {
   position: fixed;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-//   width: 280px;
-//   height: 119px;
-
-  top: 50;
-  left: 50;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+ 
   border-radius: 10px;
-  background-color: var(--modal-bg-color);
+  // background-color: var(--modal-bg-color);
   transition: opacity 250ms linear, visibility 250ms linear;
   
 
@@ -261,16 +252,12 @@
   }
 
   @include mq(mobile) {
-    top: 150;
-    left: 100;
+   
   }
   @include mq(tablet) {
-    top: 400;
-    left: 300;
+   
   }
   @include mq(desktop) {
-    top: 600;
-    left: 800;
   }
 
  
@@ -280,8 +267,7 @@
   position: absolute;
   width: 280px;
   min-height: 119px;
-  top: 40;
-  left: -40;
+  padding: 28px;
   border-radius: 10px;
   border: 1px solid var(--accent-color);
   background-color: var(--modal-bg-color);
@@ -293,24 +279,21 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, 0) scaleY(0);
   }
- @include mq(mobile) {
-    top: 80;
-    left: -20;
-    transform: translate(-15%, -15%) scaleY(1);
- }
+
   @include mq(tablet) {
     width: 568px;
     min-height: 449px;
-    top: -130;
-    left: 100;
+    padding: 32px 60px;
+   
     transform: translate(-50%, -50%) scaleY(1);
   }
 
   @include mq(desktop) {
-    top: -180;
-    left: 100;
+ 
     width: 568px;
     min-height: 449px;
+    padding: 32px 60px;
+    transform: translate(-50%, -50%) scaleY(1);
   }
 }
 
@@ -322,14 +305,19 @@
   }
 
 .video-cow {
-    margin: 20px 28px;
+
+    // margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     @include mq(tablet) {
-        margin: 32px 60px;
+      margin-top: 32px;
+      margin-bottom: 32px;
         padding: 0;
    }
     @include mq(desktop) {
-     margin: 32px 60px;
+      margin-top: 32px;
+      margin-bottom: 32px;
      padding: 0;
 }
 }
@@ -337,7 +325,7 @@
 
   width: 224px;
   height: 119px;
- 
+
   @include mq(tablet) {
 
     width: 448px;
@@ -376,40 +364,31 @@
 }
 .modal-title {
   font-family: 'Seymour One', sans-serif;
-  width: 171px;
-  height: 24px;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  margin: 28px 54px 20px 55px;
+
   color: var(--text-color-black);
 
   @include mq(tablet) {
-    width: 322px;
-    height: 28px;
     font-size: 20px;
     line-height: 1.4;
-    margin: 32px 123px;
   }
   @include mq(desktop) {
-    width: 322px;
-    height: 28px;
     font-size: 20px;
     line-height: 1.4;
-    margin: 32px 123px;
   }
 }
 
 .modal-text {
-  width: 224px;
-  height: 140px;
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
-  margin: 0 28px 28px 28px;
+  margin-bottom: 0px;
+
   color: var(--text-color-black);
 
   @include mq(tablet) {
@@ -417,13 +396,11 @@
     height: 88px;
     font-size: 16px;
     line-height: 1.4;
-    margin: 0 60px 32px 60px;
   }
   @include mq(desktop) {
     width: 448px;
     height: 88px;
     font-size: 16px;
     line-height: 1.4;
-    margin: 0 60px 32px 60px;
   }
 }
