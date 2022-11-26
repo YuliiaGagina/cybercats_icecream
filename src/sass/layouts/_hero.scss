@@ -5,13 +5,16 @@
     padding-top: 26px;
   }
 
-  @include mq(desktop) {
+  @include mq(tablet) {
     padding-top: 37px;
+  }
+  @include mq(desktop) {
+    padding-top: 45px;
   }
 }
 .hero-container {
   position: relative;
-  min-height: 502px;
+
   background-color: var(--mob-bg-color);
   background-position: 50% 100%;
   background-size: contain;
@@ -26,7 +29,6 @@
 
   @include mq(tablet) {
     background-image: url(../images/tablet-pattern.png);
-    min-height: 415px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -37,7 +39,6 @@
 
   @include mq(desktop) {
     background-image: url(../images/desk-pattern.png);
-    min-height: 664px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -142,7 +143,6 @@
   }
 
   @include mq(desktop) {
-    padding-top: 8px;
     width: 367px;
     font-size: 38px;
   }
