@@ -170,8 +170,22 @@
     @media (min-width: 768px) {
     display: flex;
     justify-content: center;
+    }   
+    @media screen and(min-width: 320px) {
+            padding: 20px 20px 62px;
+        }
+    
+    @media screen and(min-width: 768px) {
+            padding: 14px 224px 13px 246px;
+        }
+    
+    @media screen and(min-width: 1200px) {
+            margin: 0 auto;
+            width: 97%;
+            padding: 12px 470px 11px 475px;
     }
 }
+
 
 .footer__copyright-copy {
     font-weight: 700;
