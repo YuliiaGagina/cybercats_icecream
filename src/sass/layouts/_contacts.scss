@@ -1,11 +1,13 @@
 .cards {
+    
     background-color: var(--tab-bg-color);
 
     .container {
         display: flex;
         justify-content: center;
         position: relative;
-        padding-top: 1098px;
+        margin-top: -40px;
+        // padding-top: 1098px;
 
         @include mq(tablet) {
             padding-top: 400px;
@@ -18,19 +20,23 @@
 }
 
 .cards__content {
+    margin-top: 28px;
     position: normal;
     top: -345px;
 
     @include mq(tablet) {
+         margin-top: -300px;
         top: -291px;
     }
 
     @include mq(desktop) {
-        top: -90px;
+        // top: -90px;
+         margin-top: -400px;
     }
 }
 
 .cards__list {
+    margin-top: -350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,11 +248,15 @@
     }
 }
 
+
 .cards__button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 0;
     margin-top: 32px;
+    margin-bottom: 60px;
+    // text-align: center;
 
     @include mq(mobile) {
         display: block;
@@ -256,6 +266,7 @@
         margin-top: 60px;
         padding-bottom: 40px;
         display: flex;
+        gap: 16px;
         justify-content: center;
     }
 
@@ -266,11 +277,18 @@
 }
 
 .btn-footer {
+    text-align: center;
     cursor: pointer;
     @include mq(tablet) {
         margin-bottom: 0;
-        margin-right: 16px;
+        // margin-right: 16px;
         margin-left: 0;
+    }
+    &.first{
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 16px;
+        border: 1px solid transparent;
     }
 }
 
@@ -280,6 +298,10 @@
         height: 42px;
         margin-left: 0;
         margin-right: 0;
+    }
+    &.second{
+        min-width: 202px;
+        display: inline-block;
     }
 }
 
