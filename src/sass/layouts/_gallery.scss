@@ -2,48 +2,40 @@
   border-radius: 16px;
 }
 
-
 .gallery {
   padding-bottom: 0px;
   width: 100%;
-  // background-image: linear-gradient(var(--mob-bg-color) 20px, var(--mob-bg-color) 20px, url('../images/products/bg-mob-1x.jpg') );
-  // background-repeat: no-repeat;
-  // background-position: top;
-  // background-size: cover;
-
-  background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
-
-  // background-image: url('../images/products/bg-mob-1x.jpg');
-  background: linear-gradient(to bottom, #84a178 15%, transparent 15%),
+  background-size: cover;
+  background-image: linear-gradient(to bottom, #84a178 15%, transparent 15%),
     url('../images/products/bg-mob-1x.jpg');
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background: linear-gradient(to bottom, #84a178 15%, transparent 15%),
-      url(../images/products/bg-mob-2x.jpg);
+    background-image: linear-gradient(to bottom, #84a178 15%, transparent 15%),
+      url('../images/products/bg-mob-2x.jpg');
   }
   @media screen and (min-width: 481px) {
-    background: linear-gradient(to bottom, #84a178 30%, transparent 30%),
-      url(../images/products/bg-tab-1x.jpg);
+    background-image: linear-gradient(to bottom, #84a178 30%, transparent 30%),
+      url('../images/products/bg-tab-1x.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background: linear-gradient(to bottom, #84a178 15%, transparent 15%),
-        url(../images/products/bg-tab-2x.jpg);
+      background-image: linear-gradient(to bottom, #84a178 15%, transparent 15%),
+        url('../images/products/bg-tab-2x.jpg');
     }
   }
   @media screen and (min-width: 769px) {
-    background: linear-gradient(to bottom, #84a178 20%, transparent 20%),
-      url(../images/products/bg-desk-1x.jpg);
+    background-image: linear-gradient(to bottom, #84a178 20%, transparent 20%),
+      url('../images/products/bg-desk-1x.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background: linear-gradient(to bottom, #84a178 15%, transparent 15%),
-        url(../images/products/bg-desk-2x.jpg);
+      background-image: linear-gradient(to bottom, #84a178 15%, transparent 15%),
+        url('../images/products/bg-desk-2x.jpg');
     }
   }
 
@@ -63,15 +55,4 @@
       border-radius: 24px;
     }
   }
-  // &__list{
-  //     border-radius: 8px;
-
-  //     width: 280px;
-  //     height: 130px;
-  //     @include mq(tablet){
-  //         width: 704px;
-  //         height: 327px;
-  //     }
-
-  // }
 }
