@@ -1,15 +1,41 @@
 .reviews {
+
+    background-repeat: no-repeat;
+   background-position: 0px 150px;
+    background-size: cover;
+   
+    // background-image: url('../images/products/bg-mob-1x.jpg');
+     background: url('../images/products/bg-mob-1x.jpg');
+     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background:  url(../images/products/bg-mob-2x.jpg);
+  }
+    @media screen and (min-width: 481px) {
+    background:  url(../images/products/bg-tab-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background:  url(../images/products/bg-tab-2x.jpg);
+    }
+  }
+     @media screen and (min-width: 769px) {
+    background:  url(../images/products/bg-desk-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background:  url(../images/products/bg-desk-2x.jpg);
+    }
+  }
+
+
   padding-top: 75px;
-  padding-bottom: 48px;
+  padding-bottom: 390px;
 
   @include mq(tablet) {
     padding-top: 55px;
-    padding-bottom: 80px;
+      padding-bottom: 370px;
   }
 
   @include mq(desktop) {
     padding-top: 123px;
-    padding-bottom: 100px;
+      padding-bottom: 230px;
   }
 }
 
@@ -45,6 +71,7 @@
   }
 }
 .reviews-text {
+  border-radius: 20px;
   padding: 34px 39px;
   background-color: var(--mob-bg-color);
   font-size: 12px;
