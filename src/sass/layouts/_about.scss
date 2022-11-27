@@ -3,9 +3,7 @@
   flex-direction: column;
   justify-self: center;
   align-items: center;
- 
-  
-  
+
   @include mq(tablet) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -15,7 +13,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     // justify-content: center;
-    
   }
 }
 
@@ -44,15 +41,13 @@
   }
 
   @include mq(desktop) {
-   
     // width: 376px;
     // height: 37px;
     font-weight: 800;
     font-size: 30px;
     padding-top: 60px;
-   padding-left: 412px;
+    padding-left: 412px;
     // margin: 60px 412px 12px 412px;
-    
   }
 }
 
@@ -68,7 +63,7 @@
   text-transform: uppercase;
 
   color: var(--text-color-white);
- 
+
   @include mq(tablet) {
     width: 454px;
     height: 43px;
@@ -97,7 +92,7 @@
   @include mq(tablet) {
     width: 336px;
     height: 330px;
-    margin: 72px 32px 86px 32px;
+    margin: 72px 32px 86px 0;
   }
 
   @include mq(desktop) {
@@ -122,16 +117,17 @@
   }
 }
 .btn-about-card {
-    width: 164px;
+  width: 164px;
   height: 42px;
-    border-radius: 10px;
-    border: none;
-    margin-top: 100px;
-   
-   border-color: none;
-    background-color: var(--btn-accent-bg);
-    transition: background-color var(--time) var(--cubic), color var(--time) var(--cubic), fill var(--time) var(--cubic);
-    cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  margin-top: 100px;
+
+  border-color: none;
+  background-color: var(--btn-accent-bg);
+  transition: background-color var(--time) var(--cubic),
+    color var(--time) var(--cubic), fill var(--time) var(--cubic);
+  cursor: pointer;
 }
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
@@ -244,29 +240,23 @@
   top: 50%;
   left: 50%;
   z-index: 5;
- 
+
   border-radius: 10px;
   // background-color: var(--modal-bg-color);
   transition: opacity 250ms linear, visibility 250ms linear;
-  
 
   &.is-hidden {
- 
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
   }
 
   @include mq(mobile) {
-   
   }
   @include mq(tablet) {
-   
   }
   @include mq(desktop) {
   }
-
- 
 }
 
 .modal {
@@ -280,8 +270,7 @@
 
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform var(--time) linear;
- 
-  
+
   .backdrop.is-hidden & {
     transform: translate(-50%, 0) scaleY(0);
   }
@@ -290,12 +279,11 @@
     width: 568px;
     min-height: 449px;
     padding: 32px 60px;
-   
+
     transform: translate(-50%, -50%) scaleY(1);
   }
 
   @include mq(desktop) {
- 
     width: 568px;
     min-height: 449px;
     padding: 32px 60px;
@@ -308,38 +296,34 @@
   height: 18px;
   transition: var(--time) var(--cubic);
   color: var(--modal-text-color);
-  }
+}
 
 .video-cow {
+  // margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    // margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    @include mq(tablet) {
-      margin-top: 32px;
-      margin-bottom: 32px;
-        padding: 0;
-   }
-    @include mq(desktop) {
-      margin-top: 32px;
-      margin-bottom: 32px;
-     padding: 0;
-}
+  @include mq(tablet) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  @include mq(desktop) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0;
+  }
 }
 .myVideo {
-
   width: 224px;
   height: 119px;
 
   @include mq(tablet) {
-
     width: 448px;
     height: 205px;
   }
 
   @include mq(desktop) {
-
     width: 448px;
     height: 205px;
   }
