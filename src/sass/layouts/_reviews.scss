@@ -3,30 +3,31 @@
   background-position: top;
   background-size: cover;
 
-  background-image: url('../images/products/bg-mob-1x.jpg');
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/products/bg-mob-2x.jpg');
-  }
-  @media screen and (min-width: 481px) {
-    background-image: url('../images/products/bg-tab-1x.jpg');
+  // background-image: url('../images/products/bg-mob-1x.jpg');
+  // background: url('../images/products/bg-mob-1x.jpg');
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background: url(../images/products/bg-mob-2x.jpg);
+  // }
+  // @media screen and (min-width: 481px) {
+  //   background: url(../images/products/bg-tab-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/products/bg-tab-2x.jpg');
-    }
-  }
-  @media screen and (min-width: 769px) {
-    background-image: url('../images/products/bg-desk-1x.jpg');
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background: url(../images/products/bg-tab-2x.jpg);
+  //   }
+  // }
+  // @media screen and (min-width: 769px) {
+  //   background: url(../images/products/bg-desk-1x.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('../images/products/bg-desk-2x.jpg');
-    }
-  }
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background: url(../images/products/bg-desk-2x.jpg);
+  //   }
+  // }
 
   padding-top: 75px;
   padding-bottom: 390px;

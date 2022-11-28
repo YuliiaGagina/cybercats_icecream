@@ -1,4 +1,5 @@
 .hero-section {
+  margin-top: -1px;
   background-color: var(--mob-bg-color);
   padding-top: 60px;
   @include mq(tablet) {
