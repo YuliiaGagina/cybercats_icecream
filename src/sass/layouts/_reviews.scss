@@ -1,31 +1,30 @@
 .reviews {
   background-repeat: no-repeat;
-  background-position: 0px 150px;
+  background-position: top;
   background-size: cover;
 
-  // background-image: url('../images/products/bg-mob-1x.jpg');
-  background: url('../images/products/bg-mob-1x.jpg');
+  background-image: url('../images/products/bg-mob-1x.jpg');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background: url(../images/products/bg-mob-2x.jpg);
+    background-image: url('../images/products/bg-mob-2x.jpg');
   }
   @media screen and (min-width: 481px) {
-    background: url(../images/products/bg-tab-1x.jpg);
+    background-image: url('../images/products/bg-tab-1x.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background: url(../images/products/bg-tab-2x.jpg);
+      background-image: url('../images/products/bg-tab-2x.jpg');
     }
   }
   @media screen and (min-width: 769px) {
-    background: url(../images/products/bg-desk-1x.jpg);
+    background-image: url('../images/products/bg-desk-1x.jpg');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background: url(../images/products/bg-desk-2x.jpg);
+      background-image: url('../images/products/bg-desk-2x.jpg');
     }
   }
 
@@ -118,4 +117,3 @@
   height: 12px;
   background: #84a178;
 }
-
